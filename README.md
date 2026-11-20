@@ -3,6 +3,10 @@
 > 💡 **Экономика парсинга**: себестоимость **1 поискового запроса с обновлением 1 раз в секунду составляет всего ~15 рублей в месяц**.
 > Для работы не требуются дорогие мобильные или резидентские прокси — можно использовать обычные датацентровые IPv4 прокси (например, от **Webshare**).
 
+<p align="center">
+  <img src="assets/telegram_alert_example.png" alt="Пример карточки уведомления в Telegram" width="500" />
+</p>
+
 # Avito ToS forbids bots/crawlers. This is a personal, low-frequency tool:
 # no phone/name/address collection, no resale, home IP, one request at a time.
 # You accept the remaining account/IP risk.
