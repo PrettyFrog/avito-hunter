@@ -1,0 +1,92 @@
+{
+  "8450238269": {
+    "label": "target",
+    "title": "Bose quietcomfort ultra 2nd gen в Москве",
+    "price": 16300,
+    "notes": "Positive sample: Bose QuietComfort Ultra Gen 2"
+  },
+  "7779945878": {
+    "label": "target",
+    "title": "Bose QuietComfort Ultra Gen 2",
+    "price": 17900,
+    "notes": "Positive sample: Bose QuietComfort Ultra Gen 2"
+  },
+  "8381417843": {
+    "label": "other_model",
+    "title": "Bose Quietcomfort Ultra gen1 (авито доставка) в Тюмени",
+    "price": 16990,
+    "notes": "Negative sample: Bose QC Ultra Gen 1 (older generation without updated hinge/markings)"
+  },
+  "8268397751": {
+    "label": "other_model",
+    "title": "Bose quietcomfort купить в Санкт-Петербурге",
+    "price": 9000,
+    "notes": "Negative sample: Bose QuietComfort older non-Ultra model"
+  },
+  "8318138079": {
+    "label": "other_model",
+    "title": "Беспроводные наушники Bose Noise Cancelling 700",
+    "price": 13000,
+    "notes": "Negative sample: Bose NC 700"
+  },
+  "8296392277": {
+    "label": "other_model",
+    "title": "Наушники Bose noise cancelling 700 черные",
+    "price": 7000,
+    "notes": "Negative sample: Bose NC 700"
+  },
+  "8305792471": {
+    "label": "other_model",
+    "title": "Наушники проводные Bose Quiet Comfort 15",
+    "price": 5600,
+    "notes": "Negative sample: Bose Quiet Comfort 15"
+  },
+  "8419823500": {
+    "label": "other_model",
+    "title": "Наушники sony wh 1000xm5 в Москве",
+    "price": 12000,
+    "notes": "Negative sample: Sony WH-1000XM5"
+  },
+  "8273645008": {
+    "label": "other_model",
+    "title": "Sony WH-1000XM4 в Барнауле",
+    "price": 12990,
+    "notes": "Negative sample: Sony WH-1000XM4"
+  },
+  "8308248473": {
+    "label": "other_model",
+    "title": "Беспроводные наушники Sony WH-CH720N в Мурино",
+    "price": 5500,
+    "notes": "Negative sample: Sony WH-CH720N"
+  },
+  "4573911715": {
+    "label": "other_model",
+    "title": "Bowers & Wilkins Px7 S2e Ocean Blue Наушники",
+    "price": 23500,
+    "notes": "Negative sample: Bowers & Wilkins Px7 S2e"
+  },
+  "7457323767": {
+    "label": "other_model",
+    "title": "Sennheiser Momentum 4 Wireless.Original в Москве",
+    "price": 18500,
+    "notes": "Negative sample: Sennheiser Momentum 4 Wireless"
+  },
+  "8283880185": {
+    "label": "other_model",
+    "title": "Marshall major 5 black в Ростове-на-Дону",
+    "price": 6499,
+    "notes": "Negative sample: Marshall major 5"
+  },
+  "8316839859": {
+    "label": "other_model",
+    "title": "Airpods pro в Екатеринбурге",
+    "price": 5000,
+    "notes": "Negative sample: Airpods pro (TWS earbuds)"
+  },
+  "7505123236": {
+    "label": "other_model",
+    "title": "Наушники ARG VT-H216 Beige в Москве",
+    "price": 10000,
+    "notes": "Negative sample: ARG VT-H216 generic mass-market"
+  }
+}

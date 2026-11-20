@@ -1,0 +1,14 @@
+[Unit]
+Description=avito-hunter personal collector
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/Projects/avito-hunter
+ExecStart=%h/Projects/avito-hunter/.venv/bin/hunter run
+Restart=on-failure
+RestartSec=20
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,82 @@
+id: u1_sony_a6000
+name: Фотоаппарат sony a6000
+search_url: https://www.avito.ru/sankt-peterburg/fototehnika?q=sony+a6000&radius=0&s=104&pmax=27600
+max_price: 23000
+min_price: null
+headroom_pct: 0.2
+priority: normal
+mode: live
+match:
+  policy: strict
+  aliases:
+  - Sony Alpha a6000
+  - Sony ILCE-6000
+  - Сони а6000
+  - фotoaппapat cohи a 6000
+  - фotoaппapat cohи a-6000
+  - фotoaппapat sony a 6000
+  - фotoaппapat sony a-6000
+  - фотоаппарат sony a 6000
+  - фотоаппарат sony a-6000
+  - фотоаппарат sony а 6000
+  - фотоаппарат sony а-6000
+  - фотоаппарат sоnу а 6000
+  - фотоаппарат sоnу а-6000
+  must_have:
+  - a6000
+  reject:
+  - a6300
+  - a6400
+  - a6500
+  - a6600
+  - ZV-E10
+  - NEX
+  loose_words:
+  - Sony
+  - Alpha
+  - фотоаппарат
+  - body
+  - камера
+  include_defective: false
+  accessory_words:
+  - объектив
+  - адаптер
+  - переходник
+  - аккумулятор
+  - батарея
+  - клетка
+  - зарядка
+  - стабилизатор
+  # Sibling / older-generation / clickbait conflicts. `pattern` is a regex matched
+  # against the normalized title; `unless` suppresses the rule when present.
+  conflicts:
+  - pattern: '(?<![a-z0-9а-яё])(?:a[\s\-]*(?:5000|5100|6100|6300|6400|6500|6600|6700)|а[\s\-]*(?:5000|5100|6100|6300|6400|6500|6600|6700)|ilce[\s\-]*(?:5000|5100|6100|6300|6400|6500|6600|6700)|nex[\s\-]*\d\w*)(?![a-z0-9а-яё])'
+requirements: Товар должен быть цифровым фотоаппаратом Sony a6000. Исключить объявления
+  о продаже только аксессуаров, объективов или других моделей камер.
+preset: generic
+red_flags_extra: []
+photos:
+  refs: []
+  negative_refs: []
+  signature: null
+  photo_check: 'off'
+  check: 'off'
+  hard_skip_enabled: null
+  qualified_hard_skip: false
+  refs_verified: false
+  excluded_lots: []
+  reference_product: null
+coverage:
+  backfill: false
+  deep_sweep: 'off'
+  max_pages: 20
+limits:
+  max_cards_per_day: null
+  max_photo_checks_per_day: 20
+poll_minutes: 10
+poll_seconds: null
+owner_user_id: 1
+paused_reason: null
+created_at: '2026-10-20T05:42:27.162227+00:00'
+last_confirmed_at: '2026-10-20T05:42:27.162256+00:00'
+stale_prompted_at: null

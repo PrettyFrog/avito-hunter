@@ -1,0 +1,68 @@
+id: u7_ddr4_16gb_ecc
+name: Ddr4 16gb ECC
+search_url: https://www.avito.ru/all/tovary_dlya_kompyutera/komplektuyuschie/operativnaya_pamyat-ASgBAgICAkTGB~pm7gnYZw?q=ddr4+16gb&radius=0&s=104&pmax=4800
+max_price: 4000
+min_price: null
+headroom_pct: 0.2
+priority: normal
+mode: 'off'
+match:
+  policy: loose
+  aliases:
+  - 16gb ecc
+  - 16gв есс
+  - ddr 4 16gb ecc
+  - ddr 4 16gв есс
+  - ddr-4 16gb ecc
+  - ddr-4 16gв есс
+  - ddr4 16gb ecc
+  - ddr4 16gв есс
+  - ddr416gbecc
+  - ddr416gвесс
+  must_have:
+  - ddr4
+  - 16gb
+  reject:
+  - ddr3
+  - ddr2
+  - ddr5
+  - 8gb
+  - 32gb
+  - 4gb
+  - udimm
+  - sodimm
+  loose_words:
+  - оперативная память
+  - озу
+  - ram
+  - ddr4
+  include_defective: false
+  accessory_words: []
+requirements: Каждая плашка по 16гб
+preset: electronics
+red_flags_extra: []
+photos:
+  refs: []
+  negative_refs: []
+  signature: null
+  photo_check: 'off'
+  check: 'off'
+  hard_skip_enabled: null
+  qualified_hard_skip: false
+  refs_verified: false
+  excluded_lots: []
+  reference_product: null
+coverage:
+  backfill: false
+  deep_sweep: 'off'
+  max_pages: 20
+limits:
+  max_cards_per_day: null
+  max_photo_checks_per_day: 20
+poll_minutes: null
+poll_seconds: null
+owner_user_id: 7
+paused_reason: user_paused
+created_at: '2026-10-19T21:08:33.087617+00:00'
+last_confirmed_at: '2026-10-19T21:08:33.087644+00:00'
+stale_prompted_at: null

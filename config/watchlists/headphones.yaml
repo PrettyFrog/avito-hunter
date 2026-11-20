@@ -1,0 +1,24 @@
+# Paste real search URLs from the browser after filters (private sellers, city/delivery, sort by date, max price).
+- id: sony_xm6
+  category: headphones
+  models: [sony_wh1000xm6]
+  max_price: 16000
+  price_headroom_pct: 0.20  # DECISION: headroom +20% (ceiling 19200 in search)
+  seller: private
+  poll_minutes: 5
+  priority: high  # DECISION
+  notify_mode: new  # DECISION
+  search_urls:
+    - "https://www.avito.ru/all/bytovaya_elektronika?f=ASgCAgECAUXGmgwZeyJmcm9tIjo2MDAwLCJ0byI6MTkzMjB9&q=sony+wh+1000+xm+6&s=104&pmax=19200"
+
+- id: bose_quietcomfort_ultra_gen_2
+  category: headphones
+  models: [bose_quietcomfort_ultra_gen_2]
+  max_price: 19000
+  price_headroom_pct: 0.20  # DECISION: headroom +20% (ceiling 22800 in search)
+  seller: private
+  poll_minutes: 10
+  priority: high  # DECISION
+  notify_mode: new  # DECISION
+  search_urls:
+    - "https://www.avito.ru/all/audio_i_video/naushniki-ASgBAgICAUSIAtRO?f=ASgBAgECAUSIAtROAUXGmgwYeyJmcm9tIjo4MDAwLCJ0byI6MjE2MDB9&localPriority=0&q=bose+quietcomfort+ultra+gen+2&s=104&pmax=22800"

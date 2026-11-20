@@ -1,0 +1,80 @@
+id: u1_iphone_17_256
+name: iPhone 17, 256 гб, голубой
+search_url: https://www.avito.ru/all/telefony/mobilnye_telefony/apple/iphone_17-ASgBAgICA0SywA2yhrQVtMANzqs5sMENiPw3?geoCoords=55.755814%2C37.617635&radius=0&s=104&pmax=78000
+max_price: 65000
+min_price: null
+headroom_pct: 0.2
+priority: normal
+mode: live
+match:
+  policy: strict
+  aliases:
+  - iphone 17
+  - iphone 17 256 гб глоубой
+  - iphone 17 256 гб голбуой
+  - iphone 17 256 гб голубйо
+  - iphone 17 256 гб голубой
+  - iphone 17 256 гб голуобй
+  - iphone 17 256 гб гоулбой
+  - iphone 17 256 гб оглубой
+  - ipohne 17 256 гб голубой
+  - iрноnе 17 256 гб голубой
+  - pihone 17 256 гб голубой
+  - айфон 17
+  must_have:
+  - '17'
+  reject:
+  - iphone 16
+  - iphone 16 pro
+  - iphone 16 pro max
+  - iphone 15
+  - iphone 18
+  - iphone 17 pro
+  - iphone 17 pro max
+  - iphone 17 plus
+  - iphone 17 mini
+  loose_words:
+  - apple
+  - смартфон
+  - телефон
+  - '256'
+  - гб
+  - esim
+  include_defective: false
+  accessory_words:
+  - чехол
+  - стекло
+  - коробка
+  - кабель
+  - зарядка
+  - ремешок
+  - пленка
+  - чеке
+requirements: 256 гб, голубой
+preset: generic
+red_flags_extra: []
+photos:
+  refs: []
+  negative_refs: []
+  signature: null
+  photo_check: 'off'
+  check: 'off'
+  hard_skip_enabled: null
+  qualified_hard_skip: false
+  refs_verified: false
+  excluded_lots: []
+  reference_product: null
+coverage:
+  backfill: false
+  deep_sweep: 'off'
+  max_pages: 20
+limits:
+  max_cards_per_day: null
+  max_photo_checks_per_day: 20
+poll_minutes: 10
+poll_seconds: null
+owner_user_id: 1
+paused_reason: null
+created_at: '2026-10-20T13:51:27.382379+00:00'
+last_confirmed_at: '2026-10-20T13:51:27.382405+00:00'
+stale_prompted_at: null

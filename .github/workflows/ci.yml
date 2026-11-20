@@ -1,0 +1,52 @@
+name: Offline quality gates
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: offline-quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  offline-quality:
+    runs-on: self-hosted
+    timeout-minutes: 60
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Run locked offline quality gates
+        shell: bash
+        run: |
+          set -euo pipefail
+          command -v uv >/dev/null || { echo "uv is required on the self-hosted runner" >&2; exit 1; }
+          : "${RUNNER_TEMP:?RUNNER_TEMP is required}"
+          CI_VENV="$RUNNER_TEMP/avito-hunter-ci-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          HUNTER_DATA_DIR="$(mktemp -d "$RUNNER_TEMP/avito-hunter-data.XXXXXX")"
+          trap 'rm -rf "$CI_VENV" "$HUNTER_DATA_DIR"' EXIT
+          mkdir -p "$HUNTER_DATA_DIR/products"
+          cp -a data/products/. "$HUNTER_DATA_DIR/products/"
+          export UV_PROJECT_ENVIRONMENT="$CI_VENV"
+          export UV_OFFLINE=1
+          export UV_PYTHON_DOWNLOADS=never
+          export HUNTER_DATA_DIR
+          uv lock --check
+          uv sync --frozen --extra dev --no-install-project
+          PY="$CI_VENV/bin/python"
+          test -x "$PY"
+          "$PY" -m pip check
+          "$PY" tools/check_prod_patterns.py
+          "$PY" tools/codemap.py --check
+          "$PY" tools/parity_snapshot.py check
+          "$PY" -m pytest -q tests/unit/test_architecture_limits.py
+          "$PY" -m pytest -q tests
+          "$CI_VENV/bin/ruff" check --select ANN src/hunter/application/ports.py src/hunter/domain/observations.py
+          "$PY" docs/work/validate_prod_plan.py

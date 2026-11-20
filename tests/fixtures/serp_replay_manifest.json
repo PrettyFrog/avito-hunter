@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "source_kind": "synthetic_safe_fixture",
+  "created_at": "2026-10-27T00:00:00Z",
+  "fixtures": [
+    {
+      "path": "search_sample.html",
+      "sha256": "c7efb8e8ee601fe47953deebdb596280dba85dfa4fd195a66dbb9a06921e0594",
+      "headers": {
+        "age": "2",
+        "cache-control": "max-age=60",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "freshness_checked_at": "2026-10-27T00:00:10Z",
+      "expected_cache_state": "cached",
+      "expected_lots": [
+        {
+          "id": "1112223334",
+          "price": 9900
+        },
+        {
+          "id": "1234567890",
+          "price": 17500
+        },
+        {
+          "id": "1234567891",
+          "price": 5000
+        },
+        {
+          "id": "1234567892",
+          "price": 89000
+        }
+      ]
+    }
+  ],
+  "page_states": [
+    {
+      "name": "explicit-empty",
+      "html": "<html><body><div data-marker=\"catalog-serp\"></div><div data-marker=\"empty-page\"></div></body></html>",
+      "expected": "empty_ok"
+    },
+    {
+      "name": "unknown-empty",
+      "html": "<html><body><div data-marker=\"catalog-serp\"></div></body></html>",
+      "expected": "unknown_empty"
+    }
+  ]
+}

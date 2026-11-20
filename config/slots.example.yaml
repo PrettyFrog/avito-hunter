@@ -1,0 +1,19 @@
+# Пример конфигурации слотов прокси для Avito Hunter (RB-4).
+# ВАЖНО: Никаких паролей, токенов или учетных данных в этом файле!
+# Учетные данные прокси импортируются через безопасный дескриптор:
+#   hunter slot import-proxy <slot_id> --endpoint <endpoint>
+# Сессионные cookies импортируются отдельно через:
+#   hunter slot import-session <slot_id> < cookies.json
+
+slots:
+  - slot_id: "slot_xeon_01"
+    role: "active"
+    endpoint: "http://192.168.1.101:8080"
+    account_id: "acc_primary"
+    max_queries: 4
+
+  - slot_id: "slot_xeon_02"
+    role: "reserve"
+    endpoint: "http://192.168.1.102:8080"
+    account_id: "acc_reserve"
+    max_queries: 4

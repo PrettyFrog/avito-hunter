@@ -1,0 +1,62 @@
+{
+  "title": "Популярные предложения",
+  "type": "cvr",
+  "items": [
+    {
+      "id": 9100000001,
+      "title": "Беспроводные наушники TWS A1",
+      "urlPath": "/all/audio_i_video/naushniki_tws_9100000001",
+      "location": {"name": "Москва"},
+      "seller": {"type": "private"}
+    },
+    {
+      "id": 9100000002,
+      "title": "Беспроводные наушники TWS A2",
+      "urlPath": "/all/audio_i_video/naushniki_tws_9100000002",
+      "location": {"name": "Санкт-Петербург"},
+      "seller": {"type": "private"}
+    },
+    {
+      "id": 9100000003,
+      "title": "Наушники Bluetooth ANC B1",
+      "urlPath": "/all/audio_i_video/naushniki_anc_9100000003",
+      "location": {"name": "Казань"},
+      "seller": {"type": "company"}
+    },
+    {
+      "id": 9100000004,
+      "title": "Наушники Bluetooth ANC B2",
+      "urlPath": "/all/audio_i_video/naushniki_anc_9100000004",
+      "location": {"name": "Екатеринбург"},
+      "seller": {"type": "private"}
+    },
+    {
+      "id": 9100000005,
+      "title": "Полноразмерные наушники Studio C1",
+      "urlPath": "/all/audio_i_video/naushniki_studio_9100000005",
+      "location": {"name": "Новосибирск"},
+      "seller": {"type": "private"}
+    },
+    {
+      "id": 9100000006,
+      "title": "Полноразмерные наушники Studio C2",
+      "urlPath": "/all/audio_i_video/naushniki_studio_9100000006",
+      "location": {"name": "Нижний Новгород"},
+      "seller": {"type": "company"}
+    },
+    {
+      "id": 9100000007,
+      "title": "Спортивные наушники Sport D1",
+      "urlPath": "/all/audio_i_video/naushniki_sport_9100000007",
+      "location": {"name": "Самара"},
+      "seller": {"type": "private"}
+    },
+    {
+      "id": 9100000008,
+      "title": "Спортивные наушники Sport D2",
+      "urlPath": "/all/audio_i_video/naushniki_sport_9100000008",
+      "location": {"name": "Краснодар"},
+      "seller": {"type": "private"}
+    }
+  ]
+}

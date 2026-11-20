@@ -1,0 +1,29 @@
+[Unit]
+Description=Avito Hunter Headless Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=egor
+Group=egor
+WorkingDirectory=/home/egor/scraper/avito-hunter
+Environment=PYTHONUNBUFFERED=1
+# xvfb-run creates a virtual screen so Chromium runs in 100% genuine HEADED mode (headless=False)
+# Avito sees a real desktop display, real WebGL, real window dimensions, zero headless bot flags
+ExecStart=/usr/bin/xvfb-run -a -s "-screen 0 1280x800x24" /home/egor/scraper/avito-hunter/.venv/bin/hunter run
+Restart=always
+RestartSec=15
+TimeoutStopSec=15s
+KillMode=mixed
+
+# Strict RAM controls for 2.0 GB Physical DDR3 (avoids OOM and heavy swap thrashing)
+MemoryAccounting=true
+MemoryHigh=1000M
+MemoryMax=1200M
+
+# CPU priority (nice to background tasks)
+Nice=10
+
+[Install]
+WantedBy=multi-user.target

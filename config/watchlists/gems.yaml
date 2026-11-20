@@ -1,0 +1,24 @@
+# Broad search feeds for "Hidden Gems" targeting Sony and Bose
+- id: gem_headphones_sony
+  category: headphones
+  models: [sony_wh1000xm6]
+  max_price: 16000
+  price_headroom_pct: 0.0
+  seller: any
+  poll_minutes: 60
+  priority: low
+  notify_mode: new
+  search_urls:
+    - "https://www.avito.ru/all/audio_i_video/naushniki-ASgBAgICAUSIAtRO?f=ASgBAgECAUSIAtROAUXGmgwYeyJmcm9tIjo0MDAwLCJ0byI6MTYwMDB9&q=наушники+sony&s=104"
+
+- id: gem_headphones_bose
+  category: headphones
+  models: [bose_quietcomfort_ultra_gen_2]
+  max_price: 19000
+  price_headroom_pct: 0.0
+  seller: any
+  poll_minutes: 60
+  priority: low
+  notify_mode: new
+  search_urls:
+    - "https://www.avito.ru/all/audio_i_video/naushniki-ASgBAgICAUSIAtRO?f=ASgBAgECAUSIAtROAUXGmgwYeyJmcm9tIjo0MDAwLCJ0byI6MTkwMDB9&q=наушники+bose&s=104"

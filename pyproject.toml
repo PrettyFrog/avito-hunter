@@ -1,0 +1,94 @@
+[project]
+name = "avito-hunter"
+version = "0.1.0"
+description = "Personal multi-watchlist deal hunter with a price cap and Telegram alerts"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "pydantic>=2.10",
+  "pydantic-settings>=2.7",
+  "pyyaml>=6.0",
+  "loguru>=0.7",
+  "typer>=0.16",
+  "apscheduler>=3.10",
+  "playwright>=1.49",
+  "selectolax>=0.3",
+  "rapidfuzz>=3.10",
+  "aiosqlite>=0.21",
+  "httpx[brotli,zstd]>=0.28",
+  "aiogram>=3.17",
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.34",
+  "jinja2>=3.1",
+  "python-dotenv>=1.0",
+  "imagehash>=4.3",
+  "pillow>=11.0",
+  "pytesseract>=0.3.13",
+  "python-multipart>=0.0.18",
+  "aiohttp-socks>=0.10",
+  "pycryptodome>=3.20",
+  "opencv-python-headless>=4.10",
+  "camoufox[geoip]>=0.5.9",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3",
+  "pytest-asyncio>=0.25",
+  "ruff>=0.9",
+]
+
+[project.scripts]
+hunter = "hunter.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hunter"]
+
+[tool.hatch.build.targets.wheel.sources]
+"src/hunter" = "hunter"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-m 'not allow_network'"
+markers = [
+  "allow_network: marks tests as requiring real network access to Avito",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+src = ["src", "tests"]
+exclude = [
+  ".git",
+  ".venv",
+  "data",
+  "docs",
+  "tools",
+  "AsyncMock",
+  "build",
+  "dist",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "B"]
+ignore = [
+  "E501",  # line length handled by formatting / architecture limits
+  "E701",  # multiple statements on one line in metrics/helpers
+  "E741",  # ambiguous single-letter variable names in legacy parsers/tests
+  "E401",  # multiple imports on one line in legacy facades
+  "E402",  # module level import not at top of file in patch/migration tests
+  "E731",  # lambda assignment in test mocks
+  "B008",  # function call in argument defaults (Typer/FastAPI DI)
+  "B009",  # getattr with constant attribute in dynamic adapter checks
+  "B010",  # setattr with constant attribute
+  "B017",  # assert pytest.raises(Exception) in test contracts
+  "B904",  # raise ... from err in legacy translation layers
+  "F401",  # unused imports across package facades and public exports
+  "F841",  # unused local variables in test assertions and fixtures
+]

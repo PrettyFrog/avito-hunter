@@ -1,0 +1,922 @@
+{
+  "bose_quietcomfort_ultra_gen_2": {
+    "id": "bose_quietcomfort_ultra_gen_2",
+    "name": "Bose QuietComfort Ultra Gen 2",
+    "search_url": "https://www.avito.ru/all/audio_i_video/naushniki-ASgBAgICAUSIAtRO?f=ASgBAgECAUSIAtROAUXGmgwMeyJ0byI6MjI4MDB9&localPriority=0&q=bose+quietcomfort+ultra+gen+2&s=104&pmax=22800",
+    "max_price": 19000,
+    "min_price": null,
+    "headroom_pct": 0.2,
+    "priority": "high",
+    "mode": "live",
+    "match": {
+      "policy": "strict",
+      "aliases": [
+        "bose quietcomfort ultra gen 2",
+        "bose qc ultra 2",
+        "qc ultra gen 2",
+        "quietcomfort ultra 2",
+        "bose quietcomfort ultra 2",
+        "bose quitecomfort ultra 2",
+        "bose quitecomfort ultra gen 2"
+      ],
+      "must_have": [],
+      "reject": [
+        "earbuds",
+        "вкладыши",
+        "затычки",
+        "open earbuds",
+        "ultra open",
+        "bose 700",
+        "nc 700",
+        "qc 45",
+        "qc 35",
+        "qc 25",
+        "qc 20",
+        "qc 15",
+        "qc se",
+        "quietcomfort se",
+        "qc sc",
+        "quietcomfort sc",
+        "soundsport",
+        "soundlink",
+        "sleepbuds",
+        "sport earbuds",
+        "qc ultra gen 1"
+      ],
+      "loose_words": [],
+      "include_defective": false,
+      "accessory_words": [
+        "earbuds",
+        "вкладыши"
+      ],
+      "conflicts": [
+        {
+          "pattern": "(?<![a-z0-9а-яё])(?:soundsport|soundlink|sleepbuds|frames|sport\\s+earbuds|ultra\\s+open|quietcomfort\\s+earbuds|qc\\s+earbuds|quietcomfort\\s+se|qc\\s+se|quietcomfort\\s+sc|qc\\s+sc|quietcomfort\\s*(?:15|20|25|30|35|45)|qc\\s*(?:15|20|25|30|35|45)|bose\\s+700|nc\\s*700|a20|a30|aviation)(?![a-z0-9а-яё])",
+          "unless": [],
+          "label": null
+        },
+        {
+          "pattern": "(?<![a-z0-9а-яё])quietcomfort\\s+headphones(?![a-z0-9а-яё])",
+          "unless": [
+            "ultra",
+            "ультра"
+          ],
+          "label": "quietcomfort headphones (non-ultra)"
+        }
+      ]
+    },
+    "requirements": "Оригинальные беспроводные полноразмерные наушники Bose QuietComfort Ultra 2-го поколения.",
+    "preset": "electronics",
+    "red_flags_extra": [],
+    "photos": {
+      "refs": [
+        "bdc609d6ccf89c0ce071739d87883eacb46b24f83b0858646ff8811cbd4362a2",
+        "e0349f48d79e50ebca6841e0dd5a194400d89d4984d239cdef3b5bd15d041421"
+      ],
+      "negative_refs": [],
+      "signature": {
+        "key_features": [
+          "Характерные металлические направляющие (йоки) с плавным переходом в чаши",
+          "Отсутствие видимых петель для складывания чаш внутрь оголовья",
+          "Минималистичный дизайн с логотипом Bose на внешней стороне каждой чаши",
+          "Порт USB-C для зарядки, расположенный в нижней части правой чаши",
+          "Сенсорная панель управления на правой чаше и физическая кнопка питания/сопряжения",
+          "Перфорированные зоны микрофонов на внешней поверхности чаш"
+        ],
+        "differs_from": [
+          {
+            "model": "Bose QC45",
+            "how": "У QC45 есть складной механизм петель, позволяющий складывать наушники, тогда как у Ultra чаши поворачиваются только в одной плоскости."
+          },
+          {
+            "model": "Bose NC 700",
+            "how": "У NC 700 более тонкое оголовье и иная система крепления чаш к дужке, в то время как у Ultra более массивное и мягкое оголовье."
+          }
+        ],
+        "expected_markings": [
+          "Логотип 'BOSE' на внешней стороне чаш",
+          "Маркировка 'L' и 'R' внутри амбушюр или на внутренней стороне дужки",
+          "Серийный номер (S/N) под амбушюрой или на внутренней стороне оголовья",
+          "Информация о модели и стране производства (Regulatory markings) на внутренней стороне дужки"
+        ],
+        "best_angles": [
+          "Вид сбоку на крепление чаши к оголовью (демонстрация отсутствия складного шарнира)",
+          "Крупный план внешней стороны чаши с логотипом Bose",
+          "Вид на нижнюю грань правой чаши с портом USB-C и кнопкой управления"
+        ]
+      },
+      "photo_check": "strict",
+      "check": "both",
+      "hard_skip_enabled": null,
+      "qualified_hard_skip": false,
+      "refs_verified": true,
+      "excluded_lots": [],
+      "reference_product": null
+    },
+    "coverage": {
+      "backfill": false,
+      "deep_sweep": "off",
+      "max_pages": 20
+    },
+    "limits": {
+      "max_cards_per_day": null,
+      "max_photo_checks_per_day": 999999
+    },
+    "seller": null,
+    "poll_minutes": 10,
+    "poll_seconds": null,
+    "owner_user_id": null,
+    "paused_reason": null,
+    "created_at": null,
+    "last_confirmed_at": null,
+    "stale_prompted_at": null
+  },
+  "gem_headphones_bose": {
+    "id": "gem_headphones_bose",
+    "name": "Gem Bose Flagships",
+    "search_url": "https://www.avito.ru/all/audio_i_video/naushniki-ASgBAgICAUSIAtRO?f=ASgBAgECAUSIAtROAUXGmgwMeyJ0byI6MTkwMDB9&q=%D0%BD%D0%B0%D1%83%D1%88%D0%BD%D0%B8%D0%BA%D0%B8+bose&s=104&pmax=19000",
+    "max_price": 19000,
+    "min_price": null,
+    "headroom_pct": 0.0,
+    "priority": "low",
+    "mode": "live",
+    "match": {
+      "policy": "loose",
+      "aliases": [
+        "bose quietcomfort ultra gen 2",
+        "bose qc ultra 2",
+        "qc ultra gen 2",
+        "quietcomfort ultra 2",
+        "bose quietcomfort ultra 2",
+        "bose quitecomfort ultra 2",
+        "bose quitecomfort ultra gen 2"
+      ],
+      "must_have": [],
+      "reject": [
+        "earbuds",
+        "вкладыши",
+        "затычки",
+        "проводные",
+        "open earbuds",
+        "ultra open",
+        "bose 700",
+        "nc 700",
+        "qc 45",
+        "qc 35",
+        "qc 25",
+        "qc 20",
+        "qc 15",
+        "qc se",
+        "quietcomfort se",
+        "qc sc",
+        "quietcomfort sc",
+        "soundsport",
+        "soundlink",
+        "sleepbuds",
+        "sport earbuds",
+        "qc ultra gen 1"
+      ],
+      "loose_words": [
+        "наушники",
+        "bose"
+      ],
+      "include_defective": false,
+      "accessory_words": [
+        "earbuds",
+        "вкладыши",
+        "провод",
+        "чехол",
+        "кабель"
+      ],
+      "conflicts": []
+    },
+    "requirements": "Поиск скрытых флагманских беспроводных наушников Bose QuietComfort Ultra Gen 2 без точного указания модели в заголовке.",
+    "preset": "electronics",
+    "red_flags_extra": [],
+    "photos": {
+      "refs": [
+        "bdc609d6ccf89c0ce071739d87883eacb46b24f83b0858646ff8811cbd4362a2",
+        "e0349f48d79e50ebca6841e0dd5a194400d89d4984d239cdef3b5bd15d041421"
+      ],
+      "negative_refs": [],
+      "signature": {
+        "key_features": [
+          "Характерные металлические направляющие (йоки) с плавным переходом в чаши",
+          "Отсутствие видимых петель для складывания чаш внутрь оголовья",
+          "Минималистичный дизайн с логотипом Bose на внешней стороне каждой чаши",
+          "Порт USB-C для зарядки, расположенный в нижней части правой чаши",
+          "Сенсорная панель управления на правой чаше и физическая кнопка питания/сопряжения",
+          "Перфорированные зоны микрофонов на внешней поверхности чаш"
+        ],
+        "differs_from": [
+          {
+            "model": "Bose QC45",
+            "how": "У QC45 есть складной механизм петель, позволяющий складывать наушники, тогда как у Ultra чаши поворачиваются только в одной плоскости."
+          },
+          {
+            "model": "Bose NC 700",
+            "how": "У NC 700 более тонкое оголовье и иная система крепления чаш к дужке, в то время как у Ultra более массивное и мягкое оголовье."
+          }
+        ],
+        "expected_markings": [
+          "Логотип 'BOSE' на внешней стороне чаш",
+          "Маркировка 'L' и 'R' внутри амбушюр или на внутренней стороне дужки",
+          "Серийный номер (S/N) под амбушюрой или на внутренней стороне оголовья",
+          "Информация о модели и стране производства (Regulatory markings) на внутренней стороне дужки"
+        ],
+        "best_angles": [
+          "Вид сбоку на крепление чаши к оголовью (демонстрация отсутствия складного шарнира)",
+          "Крупный план внешней стороны чаши с логотипом Bose",
+          "Вид на нижнюю грань правой чаши с портом USB-C и кнопкой управления"
+        ]
+      },
+      "photo_check": "strict",
+      "check": "both",
+      "hard_skip_enabled": null,
+      "qualified_hard_skip": false,
+      "refs_verified": true,
+      "excluded_lots": [],
+      "reference_product": "bose_quietcomfort_ultra_gen_2"
+    },
+    "coverage": {
+      "backfill": false,
+      "deep_sweep": "off",
+      "max_pages": 20
+    },
+    "limits": {
+      "max_cards_per_day": 15,
+      "max_photo_checks_per_day": 999999
+    },
+    "seller": null,
+    "poll_minutes": 60,
+    "poll_seconds": null,
+    "owner_user_id": null,
+    "paused_reason": null,
+    "created_at": null,
+    "last_confirmed_at": null,
+    "stale_prompted_at": null
+  },
+  "gem_headphones_sony": {
+    "id": "gem_headphones_sony",
+    "name": "Gem Sony Flagships",
+    "search_url": "https://www.avito.ru/all/audio_i_video/naushniki-ASgBAgICAUSIAtRO?f=ASgBAgECAUSIAtROAUXGmgwMeyJ0byI6MTYwMDB9&q=%D0%BD%D0%B0%D1%83%D1%88%D0%BD%D0%B8%D0%BA%D0%B8+sony&s=104&pmax=16000",
+    "max_price": 16000,
+    "min_price": null,
+    "headroom_pct": 0.0,
+    "priority": "low",
+    "mode": "live",
+    "match": {
+      "policy": "loose",
+      "aliases": [
+        "wh1000xm6",
+        "wh 1000 xm6",
+        "sony wh1000xm6",
+        "wh 1000 xm 6",
+        "1000xm6",
+        "sony xm6",
+        "xm6"
+      ],
+      "must_have": [
+        "xm6",
+        "xm 6",
+        "1000xm6"
+      ],
+      "reject": [
+        "xm5",
+        "xm4",
+        "xm3",
+        "xm2",
+        "1000xm5",
+        "1000xm4",
+        "1000xm3",
+        "м5",
+        "м4",
+        "м3",
+        "m5",
+        "m4",
+        "m3",
+        "ult wear",
+        "pulse",
+        "earbuds",
+        "вкладыши",
+        "затычки",
+        "проводные",
+        "пульт",
+        "inzone",
+        "linkbuds",
+        "wf-",
+        "wf",
+        "ch520",
+        "ch710",
+        "ch720",
+        "ch710n",
+        "ch720n",
+        "wh 720",
+        "wh720",
+        "720",
+        "720n",
+        "520",
+        "wh-ch",
+        "xb700",
+        "xb900",
+        "xb700n",
+        "xb900n",
+        "wh-xb",
+        "xb",
+        "mdr-",
+        "mdr",
+        "минидиск",
+        "дека"
+      ],
+      "loose_words": [
+        "наушники",
+        "sony"
+      ],
+      "include_defective": false,
+      "accessory_words": [
+        "пульт",
+        "амбушюры",
+        "провод",
+        "чехол",
+        "кабель"
+      ],
+      "conflicts": []
+    },
+    "requirements": "Поиск скрытых флагманских беспроводных наушников Sony WH-1000XM6 без явного указания модели в заголовке.",
+    "preset": "electronics",
+    "red_flags_extra": [],
+    "photos": {
+      "refs": [
+        "2122fd7957a3aec28796cc9c43dd8b1c82ac219617f8c9b5824307e9d7afda13",
+        "d71e34ad840501c803d45dddc8f343bd1a2f50ebe7edcd76ca92c228a82c18f7",
+        "88002d1bc8b68309113a16c24e48ea0068dc97030149805a328d6f16e8ddd929"
+      ],
+      "negative_refs": [
+        "83e633ba40ccd8288f54c349106847b8691135b1a0ef7185b7ef9f16972328b3",
+        "89561cd4f567c0f49b5695359a93c3ebcf463906e5d4797f8743657a87df8f99"
+      ],
+      "signature": {
+        "key_features": [
+          "Складная конструкция шарниров, позволяющая чашам поворачиваться и складываться внутрь оголовья",
+          "Бесшовный дизайн чаш с интегрированными сенсорными панелями",
+          "Тонкое, минималистичное оголовье с плавным переходом к держателям чаш",
+          "Наличие физических кнопок управления на нижней грани чаш",
+          "Матовое покрытие корпуса с высокой устойчивостью к отпечаткам пальцев",
+          "Специальный отсек для кабеля внутри комплектного чехла"
+        ],
+        "differs_from": [
+          {
+            "model": "Sony WH-1000XM5",
+            "how": "У XM6 реализован складной механизм чаш, в то время как у XM5 чаши не складываются внутрь, а только поворачиваются плашмя."
+          },
+          {
+            "model": "Sony WH-1000XM4",
+            "how": "У XM6 более обтекаемый, футуристичный дизайн без видимых ступенчатых регулировок оголовья, характерных для XM4."
+          }
+        ],
+        "expected_markings": [
+          "Логотип 'SONY' на внешней стороне шарниров",
+          "Маркировка модели 'WH-1000XM6' (обычно на внутренней стороне дужки или под амбушюрой)",
+          "Символы L/R (левый/правый) внутри чаш или на шарнирах",
+          "Серийный номер на внутренней стороне оголовья"
+        ],
+        "best_angles": [
+          "Вид сбоку на сложенное состояние наушников внутри чехла для проверки шарниров",
+          "Крупный план шарнирного узла и логотипа SONY на креплении чаши",
+          "Вид на нижнюю грань чаш для подтверждения расположения кнопок и разъемов"
+        ]
+      },
+      "photo_check": "strict",
+      "check": "both",
+      "hard_skip_enabled": null,
+      "qualified_hard_skip": false,
+      "refs_verified": true,
+      "excluded_lots": [
+        "8395731914",
+        "8448983832",
+        "7991606101",
+        "8196402239"
+      ],
+      "reference_product": "sony_xm6"
+    },
+    "coverage": {
+      "backfill": false,
+      "deep_sweep": "off",
+      "max_pages": 20
+    },
+    "limits": {
+      "max_cards_per_day": 15,
+      "max_photo_checks_per_day": 999999
+    },
+    "seller": null,
+    "poll_minutes": 60,
+    "poll_seconds": null,
+    "owner_user_id": null,
+    "paused_reason": null,
+    "created_at": null,
+    "last_confirmed_at": null,
+    "stale_prompted_at": null
+  },
+  "sony_xm6": {
+    "id": "sony_xm6",
+    "name": "Sony WH-1000XM6",
+    "search_url": "https://www.avito.ru/all/bytovaya_elektronika?f=ASgCAgECAUXGmgwMeyJ0byI6MTkyMDB9&q=sony+wh+1000+xm+6&s=104&pmax=19200",
+    "max_price": 16000,
+    "min_price": null,
+    "headroom_pct": 0.2,
+    "priority": "high",
+    "mode": "live",
+    "match": {
+      "policy": "strict",
+      "aliases": [
+        "sony_wh1000xm6",
+        "wh1000xm6",
+        "wh 1000 xm6",
+        "sony wh1000xm6",
+        "wh 1000 xm 6",
+        "1000xm6",
+        "sony xm6",
+        "xm6"
+      ],
+      "must_have": [
+        "xm6",
+        "xm 6",
+        "1000xm6"
+      ],
+      "reject": [
+        "xm5",
+        "xm4",
+        "xm3",
+        "xm2",
+        "1000xm5",
+        "1000xm4",
+        "1000xm3",
+        "м5",
+        "м4",
+        "м3",
+        "m5",
+        "m4",
+        "m3",
+        "wf-1000xm6",
+        "wf 1000 xm6",
+        "wf-1000xm5",
+        "wf",
+        "wf-",
+        "earbuds",
+        "tws",
+        "вкладыши",
+        "затычки",
+        "внутриканальные",
+        "ch720",
+        "ch520",
+        "ult wear",
+        "inzone",
+        "pulse"
+      ],
+      "loose_words": [],
+      "include_defective": false,
+      "accessory_words": [],
+      "conflicts": [
+        {
+          "pattern": "(?<![a-z0-9а-яё])(?:xm\\s*[2345]|хм\\s*[2345]|1000\\s*xm\\s*[2345]|1000\\s*хм\\s*[2345]|м[345]|m[345]|wf[\\s\\-]*1000|ch\\s*\\d{3}\\w*|ult\\s+wear|inzone|pulse)(?![a-z0-9а-яё])",
+          "unless": [],
+          "label": null
+        }
+      ]
+    },
+    "requirements": "Оригинальные флагманские беспроводные полноразмерные наушники Sony WH-1000XM6 (экспериментальный профиль, эталоны требуют ручной валидации).",
+    "preset": "electronics",
+    "red_flags_extra": [],
+    "photos": {
+      "refs": [
+        "2122fd7957a3aec28796cc9c43dd8b1c82ac219617f8c9b5824307e9d7afda13",
+        "d71e34ad840501c803d45dddc8f343bd1a2f50ebe7edcd76ca92c228a82c18f7",
+        "88002d1bc8b68309113a16c24e48ea0068dc97030149805a328d6f16e8ddd929"
+      ],
+      "negative_refs": [
+        "83e633ba40ccd8288f54c349106847b8691135b1a0ef7185b7ef9f16972328b3",
+        "89561cd4f567c0f49b5695359a93c3ebcf463906e5d4797f8743657a87df8f99"
+      ],
+      "signature": {
+        "key_features": [
+          "Полноразмерная накладная конструкция с оголовьем и мягкими чашами",
+          "Бесшовный обтекаемый дизайн чаш Sony с интегрированными сенсорными панелями",
+          "Тонкое минималистичное оголовье с поворотными держателями чаш",
+          "Физические кнопки управления и аудиоразъем 3.5мм на нижней грани чаш",
+          "Порт зарядки USB-C",
+          "Матовое покрытие корпуса с защитой от отпечатков пальцев"
+        ],
+        "differs_from": [
+          {
+            "model": "Внутриканальные TWS-наушники (WF серия)",
+            "how": "WH-1000XM6 является полноразмерными накладными наушниками с оголовьем, а не компактными вкладышами в зарядном кейсе."
+          }
+        ],
+        "expected_markings": [
+          "Логотип 'SONY' на внешней стороне шарниров",
+          "Маркировка модели 'WH-1000XM6' (обычно на внутренней стороне дужки или под амбушюрой)",
+          "Символы L/R (левый/правый) внутри чаш или на шарнирах",
+          "Серийный номер на внутренней стороне оголовья"
+        ],
+        "best_angles": [
+          "Вид сбоку на сложенное состояние наушников внутри чехла для проверки шарниров",
+          "Крупный план шарнирного узла и логотипа SONY на креплении чаши",
+          "Вид на нижнюю грань чаш для подтверждения расположения кнопок и разъемов"
+        ]
+      },
+      "photo_check": "warn",
+      "check": "both",
+      "hard_skip_enabled": null,
+      "qualified_hard_skip": false,
+      "refs_verified": true,
+      "excluded_lots": [
+        "8395731914",
+        "8448983832",
+        "7991606101",
+        "8196402239"
+      ],
+      "reference_product": null
+    },
+    "coverage": {
+      "backfill": false,
+      "deep_sweep": "off",
+      "max_pages": 20
+    },
+    "limits": {
+      "max_cards_per_day": null,
+      "max_photo_checks_per_day": 999999
+    },
+    "seller": null,
+    "poll_minutes": 5,
+    "poll_seconds": null,
+    "owner_user_id": null,
+    "paused_reason": null,
+    "created_at": null,
+    "last_confirmed_at": null,
+    "stale_prompted_at": null
+  },
+  "u1_iphone_17_256": {
+    "id": "u1_iphone_17_256",
+    "name": "iPhone 17, 256 гб, голубой",
+    "search_url": "https://www.avito.ru/all/telefony/mobilnye_telefony/apple/iphone_17-ASgBAgICA0SywA2yhrQVtMANzqs5sMENiPw3?geoCoords=55.755814%2C37.617635&radius=0&s=104&pmax=78000",
+    "max_price": 65000,
+    "min_price": null,
+    "headroom_pct": 0.2,
+    "priority": "normal",
+    "mode": "live",
+    "match": {
+      "policy": "strict",
+      "aliases": [
+        "iphone 17",
+        "iphone 17 256 гб глоубой",
+        "iphone 17 256 гб голбуой",
+        "iphone 17 256 гб голубйо",
+        "iphone 17 256 гб голубой",
+        "iphone 17 256 гб голуобй",
+        "iphone 17 256 гб гоулбой",
+        "iphone 17 256 гб оглубой",
+        "ipohne 17 256 гб голубой",
+        "iрноnе 17 256 гб голубой",
+        "pihone 17 256 гб голубой",
+        "айфон 17"
+      ],
+      "must_have": [
+        "17"
+      ],
+      "reject": [
+        "iphone 16",
+        "iphone 16 pro",
+        "iphone 16 pro max",
+        "iphone 15",
+        "iphone 18",
+        "iphone 17 pro",
+        "iphone 17 pro max",
+        "iphone 17 plus",
+        "iphone 17 mini"
+      ],
+      "loose_words": [
+        "apple",
+        "смартфон",
+        "телефон",
+        "256",
+        "гб",
+        "esim"
+      ],
+      "include_defective": false,
+      "accessory_words": [
+        "чехол",
+        "стекло",
+        "коробка",
+        "кабель",
+        "зарядка",
+        "ремешок",
+        "пленка",
+        "чеке"
+      ],
+      "conflicts": []
+    },
+    "requirements": "256 гб, голубой",
+    "preset": "generic",
+    "red_flags_extra": [],
+    "photos": {
+      "refs": [],
+      "negative_refs": [],
+      "signature": null,
+      "photo_check": "off",
+      "check": "off",
+      "hard_skip_enabled": null,
+      "qualified_hard_skip": false,
+      "refs_verified": false,
+      "excluded_lots": [],
+      "reference_product": null
+    },
+    "coverage": {
+      "backfill": false,
+      "deep_sweep": "off",
+      "max_pages": 20
+    },
+    "limits": {
+      "max_cards_per_day": null,
+      "max_photo_checks_per_day": 20
+    },
+    "seller": null,
+    "poll_minutes": 10,
+    "poll_seconds": null,
+    "owner_user_id": 1,
+    "paused_reason": null,
+    "created_at": "2026-10-20T13:51:27.382379+00:00",
+    "last_confirmed_at": "2026-10-20T13:51:27.382405+00:00",
+    "stale_prompted_at": null
+  },
+  "u1_sony_a6000": {
+    "id": "u1_sony_a6000",
+    "name": "Фотоаппарат sony a6000",
+    "search_url": "https://www.avito.ru/sankt-peterburg/fototehnika?q=sony+a6000&radius=0&s=104&pmax=27600",
+    "max_price": 23000,
+    "min_price": null,
+    "headroom_pct": 0.2,
+    "priority": "normal",
+    "mode": "live",
+    "match": {
+      "policy": "strict",
+      "aliases": [
+        "Sony Alpha a6000",
+        "Sony ILCE-6000",
+        "Сони а6000",
+        "фotoaппapat cohи a 6000",
+        "фotoaппapat cohи a-6000",
+        "фotoaппapat sony a 6000",
+        "фotoaппapat sony a-6000",
+        "фотоаппарат sony a 6000",
+        "фотоаппарат sony a-6000",
+        "фотоаппарат sony а 6000",
+        "фотоаппарат sony а-6000",
+        "фотоаппарат sоnу а 6000",
+        "фотоаппарат sоnу а-6000"
+      ],
+      "must_have": [
+        "a6000"
+      ],
+      "reject": [
+        "a6300",
+        "a6400",
+        "a6500",
+        "a6600",
+        "ZV-E10",
+        "NEX"
+      ],
+      "loose_words": [
+        "Sony",
+        "Alpha",
+        "фотоаппарат",
+        "body",
+        "камера"
+      ],
+      "include_defective": false,
+      "accessory_words": [
+        "объектив",
+        "адаптер",
+        "переходник",
+        "аккумулятор",
+        "батарея",
+        "клетка",
+        "зарядка",
+        "стабилизатор"
+      ],
+      "conflicts": [
+        {
+          "pattern": "(?<![a-z0-9а-яё])(?:a[\\s\\-]*(?:5000|5100|6100|6300|6400|6500|6600|6700)|а[\\s\\-]*(?:5000|5100|6100|6300|6400|6500|6600|6700)|ilce[\\s\\-]*(?:5000|5100|6100|6300|6400|6500|6600|6700)|nex[\\s\\-]*\\d\\w*)(?![a-z0-9а-яё])",
+          "unless": [],
+          "label": null
+        }
+      ]
+    },
+    "requirements": "Товар должен быть цифровым фотоаппаратом Sony a6000. Исключить объявления о продаже только аксессуаров, объективов или других моделей камер.",
+    "preset": "generic",
+    "red_flags_extra": [],
+    "photos": {
+      "refs": [],
+      "negative_refs": [],
+      "signature": null,
+      "photo_check": "off",
+      "check": "off",
+      "hard_skip_enabled": null,
+      "qualified_hard_skip": false,
+      "refs_verified": false,
+      "excluded_lots": [],
+      "reference_product": null
+    },
+    "coverage": {
+      "backfill": false,
+      "deep_sweep": "off",
+      "max_pages": 20
+    },
+    "limits": {
+      "max_cards_per_day": null,
+      "max_photo_checks_per_day": 20
+    },
+    "seller": null,
+    "poll_minutes": 10,
+    "poll_seconds": null,
+    "owner_user_id": 1,
+    "paused_reason": null,
+    "created_at": "2026-10-20T05:42:27.162227+00:00",
+    "last_confirmed_at": "2026-10-20T05:42:27.162256+00:00",
+    "stale_prompted_at": null
+  },
+  "u4_rode_nt1": {
+    "id": "u4_rode_nt1",
+    "name": "Rode nt1",
+    "search_url": "https://www.avito.ru/moskva_i_mo/audio_i_video/mikrofony-radiosistemy-i-aksessuary-ASgBAgICAUSIAtBO?q=Rode+nt1&radius=0&s=104&pmax=12000",
+    "max_price": 10000,
+    "min_price": null,
+    "headroom_pct": 0.2,
+    "priority": "normal",
+    "mode": "live",
+    "match": {
+      "policy": "loose",
+      "aliases": [
+        "Rode NT-1",
+        "Rode NT1",
+        "orde nt1",
+        "rdoe nt1",
+        "rode nt 1",
+        "rode nt-1",
+        "rode nt1",
+        "roed nt1",
+        "rоdе nт 1",
+        "rоdе nт-1",
+        "rоdе nт1",
+        "rоdеnт1",
+        "Роде НТ1"
+      ],
+      "must_have": [
+        "NT1"
+      ],
+      "reject": [
+        "NT-USB",
+        "NT1-A",
+        "NT1A",
+        "PodMic",
+        "TM1",
+        "SM2"
+      ],
+      "loose_words": [
+        "Rode",
+        "микрофон"
+      ],
+      "include_defective": false,
+      "accessory_words": [
+        "паук",
+        "крепление",
+        "держатель",
+        "поп-фильтр",
+        "поп фильтр",
+        "пантограф",
+        "стойка",
+        "ветрозащита",
+        "чехол",
+        "кабель"
+      ],
+      "conflicts": [
+        {
+          "pattern": "(?<![a-z0-9а-яё])(?:nt[\\s\\-]*1[\\s\\-]*[aа]|nt1a|nt[\\s\\-]*1[\\s\\-]*usb|nt1usb|nt[\\s\\-]*usb|nt[\\s\\-]*[23456]\\w*|ntg[\\s\\-]*\\d*|podmic|procaster|broadcaster|videomic\\w*|wireless)(?![a-z0-9а-яё])",
+          "unless": [],
+          "label": null
+        }
+      ]
+    },
+    "requirements": "Только оригинальный микрофон Rode NT1 в рабочем состоянии. Исключить аксессуары, запчасти и другие модели линейки NT.",
+    "preset": "generic",
+    "red_flags_extra": [],
+    "photos": {
+      "refs": [],
+      "negative_refs": [],
+      "signature": null,
+      "photo_check": "warn",
+      "check": "off",
+      "hard_skip_enabled": false,
+      "qualified_hard_skip": false,
+      "refs_verified": false,
+      "excluded_lots": [],
+      "reference_product": null
+    },
+    "coverage": {
+      "backfill": false,
+      "deep_sweep": "off",
+      "max_pages": 20
+    },
+    "limits": {
+      "max_cards_per_day": null,
+      "max_photo_checks_per_day": 20
+    },
+    "seller": null,
+    "poll_minutes": 10,
+    "poll_seconds": null,
+    "owner_user_id": 4,
+    "paused_reason": null,
+    "created_at": "2026-10-19T07:24:04.683491+00:00",
+    "last_confirmed_at": "2026-10-19T07:24:04.683524+00:00",
+    "stale_prompted_at": null
+  },
+  "u7_ddr4_16gb_ecc": {
+    "id": "u7_ddr4_16gb_ecc",
+    "name": "Ddr4 16gb ECC",
+    "search_url": "https://www.avito.ru/all/tovary_dlya_kompyutera/komplektuyuschie/operativnaya_pamyat-ASgBAgICAkTGB~pm7gnYZw?q=ddr4+16gb&radius=0&s=104&pmax=4800",
+    "max_price": 4000,
+    "min_price": null,
+    "headroom_pct": 0.2,
+    "priority": "normal",
+    "mode": "off",
+    "match": {
+      "policy": "loose",
+      "aliases": [
+        "16gb ecc",
+        "16gв есс",
+        "ddr 4 16gb ecc",
+        "ddr 4 16gв есс",
+        "ddr-4 16gb ecc",
+        "ddr-4 16gв есс",
+        "ddr4 16gb ecc",
+        "ddr4 16gв есс",
+        "ddr416gbecc",
+        "ddr416gвесс"
+      ],
+      "must_have": [
+        "ddr4",
+        "16gb"
+      ],
+      "reject": [
+        "ddr3",
+        "ddr2",
+        "ddr5",
+        "8gb",
+        "32gb",
+        "4gb",
+        "udimm",
+        "sodimm"
+      ],
+      "loose_words": [
+        "оперативная память",
+        "озу",
+        "ram",
+        "ddr4"
+      ],
+      "include_defective": false,
+      "accessory_words": [],
+      "conflicts": []
+    },
+    "requirements": "Каждая плашка по 16гб",
+    "preset": "electronics",
+    "red_flags_extra": [],
+    "photos": {
+      "refs": [],
+      "negative_refs": [],
+      "signature": null,
+      "photo_check": "off",
+      "check": "off",
+      "hard_skip_enabled": null,
+      "qualified_hard_skip": false,
+      "refs_verified": false,
+      "excluded_lots": [],
+      "reference_product": null
+    },
+    "coverage": {
+      "backfill": false,
+      "deep_sweep": "off",
+      "max_pages": 20
+    },
+    "limits": {
+      "max_cards_per_day": null,
+      "max_photo_checks_per_day": 20
+    },
+    "seller": null,
+    "poll_minutes": null,
+    "poll_seconds": null,
+    "owner_user_id": 7,
+    "paused_reason": "user_paused",
+    "created_at": "2026-10-19T21:08:33.087617+00:00",
+    "last_confirmed_at": "2026-10-19T21:08:33.087644+00:00",
+    "stale_prompted_at": null
+  }
+}

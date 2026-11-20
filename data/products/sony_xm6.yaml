@@ -1,0 +1,109 @@
+id: sony_xm6
+name: Sony WH-1000XM6
+search_url: https://www.avito.ru/all/bytovaya_elektronika?f=ASgCAgECAUXGmgwMeyJ0byI6MTkyMDB9&q=sony+wh+1000+xm+6&s=104&pmax=19200
+max_price: 16000
+min_price: null
+headroom_pct: 0.2
+priority: high
+mode: live
+match:
+  policy: strict
+  aliases:
+  - sony_wh1000xm6
+  - wh1000xm6
+  - wh 1000 xm6
+  - sony wh1000xm6
+  - wh 1000 xm 6
+  - 1000xm6
+  - sony xm6
+  - xm6
+  must_have:
+  - xm6
+  - xm 6
+  - 1000xm6
+  reject:
+  - xm5
+  - xm4
+  - xm3
+  - xm2
+  - 1000xm5
+  - 1000xm4
+  - 1000xm3
+  - м5
+  - м4
+  - м3
+  - m5
+  - m4
+  - m3
+  - wf-1000xm6
+  - wf 1000 xm6
+  - wf-1000xm5
+  - wf
+  - wf-
+  - earbuds
+  - tws
+  - вкладыши
+  - затычки
+  - внутриканальные
+  - ch720
+  - ch520
+  - ult wear
+  - inzone
+  - pulse
+  loose_words: []
+  include_defective: false
+  accessory_words: []
+  # Sibling / older-generation / clickbait conflicts. `pattern` is a regex matched
+  # against the normalized title; `unless` suppresses the rule when present.
+  conflicts:
+  - pattern: '(?<![a-z0-9а-яё])(?:xm\s*[2345]|хм\s*[2345]|1000\s*xm\s*[2345]|1000\s*хм\s*[2345]|м[345]|m[345]|wf[\s\-]*1000|ch\s*\d{3}\w*|ult\s+wear|inzone|pulse)(?![a-z0-9а-яё])'
+requirements: Оригинальные флагманские беспроводные полноразмерные наушники Sony WH-1000XM6
+  (экспериментальный профиль, эталоны требуют ручной валидации).
+preset: electronics
+red_flags_extra: []
+photos:
+  refs:
+  - 2122fd7957a3aec28796cc9c43dd8b1c82ac219617f8c9b5824307e9d7afda13
+  - d71e34ad840501c803d45dddc8f343bd1a2f50ebe7edcd76ca92c228a82c18f7
+  - 88002d1bc8b68309113a16c24e48ea0068dc97030149805a328d6f16e8ddd929
+  negative_refs:
+  - 83e633ba40ccd8288f54c349106847b8691135b1a0ef7185b7ef9f16972328b3
+  - 89561cd4f567c0f49b5695359a93c3ebcf463906e5d4797f8743657a87df8f99
+  signature:
+    key_features:
+    - Полноразмерная накладная конструкция с оголовьем и мягкими чашами
+    - Бесшовный обтекаемый дизайн чаш Sony с интегрированными сенсорными панелями
+    - Тонкое минималистичное оголовье с поворотными держателями чаш
+    - Физические кнопки управления и аудиоразъем 3.5мм на нижней грани чаш
+    - Порт зарядки USB-C
+    - Матовое покрытие корпуса с защитой от отпечатков пальцев
+    differs_from:
+    - model: Внутриканальные TWS-наушники (WF серия)
+      how: WH-1000XM6 является полноразмерными накладными наушниками с оголовьем, а не компактными вкладышами в зарядном кейсе.
+    expected_markings:
+    - Логотип 'SONY' на внешней стороне шарниров
+    - Маркировка модели 'WH-1000XM6' (обычно на внутренней стороне дужки или под амбушюрой)
+    - Символы L/R (левый/правый) внутри чаш или на шарнирах
+    - Серийный номер на внутренней стороне оголовья
+    best_angles:
+    - Вид сбоку на сложенное состояние наушников внутри чехла для проверки шарниров
+    - Крупный план шарнирного узла и логотипа SONY на креплении чаши
+    - Вид на нижнюю грань чаш для подтверждения расположения кнопок и разъемов
+  check: both
+  photo_check: warn
+  qualified_hard_skip: false
+  refs_verified: true
+  excluded_lots:
+  - '8395731914'
+  - '8448983832'
+  - '7991606101'
+  - '8196402239'
+  reference_product: null
+coverage:
+  backfill: false
+  deep_sweep: 'off'
+  max_pages: 20
+limits:
+  max_cards_per_day: null
+  max_photo_checks_per_day: 999999
+poll_minutes: 5

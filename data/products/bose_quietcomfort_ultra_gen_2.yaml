@@ -1,0 +1,101 @@
+id: bose_quietcomfort_ultra_gen_2
+name: Bose QuietComfort Ultra Gen 2
+search_url: https://www.avito.ru/all/audio_i_video/naushniki-ASgBAgICAUSIAtRO?f=ASgBAgECAUSIAtROAUXGmgwMeyJ0byI6MjI4MDB9&localPriority=0&q=bose+quietcomfort+ultra+gen+2&s=104&pmax=22800
+max_price: 19000
+min_price: null
+headroom_pct: 0.2
+priority: high
+mode: live
+match:
+  policy: strict
+  aliases:
+  - bose quietcomfort ultra gen 2
+  - bose qc ultra 2
+  - qc ultra gen 2
+  - quietcomfort ultra 2
+  - bose quietcomfort ultra 2
+  - bose quitecomfort ultra 2
+  - bose quitecomfort ultra gen 2
+  must_have: []
+  reject:
+  - earbuds
+  - вкладыши
+  - затычки
+  - open earbuds
+  - ultra open
+  - bose 700
+  - nc 700
+  - qc 45
+  - qc 35
+  - qc 25
+  - qc 20
+  - qc 15
+  - qc se
+  - quietcomfort se
+  - qc sc
+  - quietcomfort sc
+  - soundsport
+  - soundlink
+  - sleepbuds
+  - sport earbuds
+  - qc ultra gen 1
+  loose_words: []
+  include_defective: false
+  accessory_words:
+  - earbuds
+  - вкладыши
+  # Sibling / older-generation / clickbait conflicts. `pattern` is a regex matched
+  # against the normalized title; `unless` suppresses the rule when present.
+  conflicts:
+  - pattern: '(?<![a-z0-9а-яё])(?:soundsport|soundlink|sleepbuds|frames|sport\s+earbuds|ultra\s+open|quietcomfort\s+earbuds|qc\s+earbuds|quietcomfort\s+se|qc\s+se|quietcomfort\s+sc|qc\s+sc|quietcomfort\s*(?:15|20|25|30|35|45)|qc\s*(?:15|20|25|30|35|45)|bose\s+700|nc\s*700|a20|a30|aviation)(?![a-z0-9а-яё])'
+  - pattern: '(?<![a-z0-9а-яё])quietcomfort\s+headphones(?![a-z0-9а-яё])'
+    unless: ['ultra', 'ультра']
+    label: quietcomfort headphones (non-ultra)
+requirements: Оригинальные беспроводные полноразмерные наушники Bose QuietComfort
+  Ultra 2-го поколения.
+preset: electronics
+red_flags_extra: []
+photos:
+  refs:
+  - bdc609d6ccf89c0ce071739d87883eacb46b24f83b0858646ff8811cbd4362a2
+  - e0349f48d79e50ebca6841e0dd5a194400d89d4984d239cdef3b5bd15d041421
+  negative_refs: []
+  signature:
+    key_features:
+    - Характерные металлические направляющие (йоки) с плавным переходом в чаши
+    - Отсутствие видимых петель для складывания чаш внутрь оголовья
+    - Минималистичный дизайн с логотипом Bose на внешней стороне каждой чаши
+    - Порт USB-C для зарядки, расположенный в нижней части правой чаши
+    - Сенсорная панель управления на правой чаше и физическая кнопка питания/сопряжения
+    - Перфорированные зоны микрофонов на внешней поверхности чаш
+    differs_from:
+    - model: Bose QC45
+      how: У QC45 есть складной механизм петель, позволяющий складывать наушники,
+        тогда как у Ultra чаши поворачиваются только в одной плоскости.
+    - model: Bose NC 700
+      how: У NC 700 более тонкое оголовье и иная система крепления чаш к дужке, в
+        то время как у Ultra более массивное и мягкое оголовье.
+    expected_markings:
+    - Логотип 'BOSE' на внешней стороне чаш
+    - Маркировка 'L' и 'R' внутри амбушюр или на внутренней стороне дужки
+    - Серийный номер (S/N) под амбушюрой или на внутренней стороне оголовья
+    - Информация о модели и стране производства (Regulatory markings) на внутренней
+      стороне дужки
+    best_angles:
+    - Вид сбоку на крепление чаши к оголовью (демонстрация отсутствия складного шарнира)
+    - Крупный план внешней стороны чаши с логотипом Bose
+    - Вид на нижнюю грань правой чаши с портом USB-C и кнопкой управления
+  check: both
+  photo_check: strict
+  qualified_hard_skip: false
+  refs_verified: true
+  excluded_lots: []
+  reference_product: null
+coverage:
+  backfill: false
+  deep_sweep: 'off'
+  max_pages: 20
+limits:
+  max_cards_per_day: null
+  max_photo_checks_per_day: 999999
+poll_minutes: 10

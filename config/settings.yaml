@@ -1,0 +1,278 @@
+timezone: Europe/Moscow
+heartbeat_hours: 24
+cold_start_days: 7
+# new = any listing that passed hard filters (useful while wiring the collector)
+# deals = only expected-value / discount alerts
+# silent = collect market only
+# shadow = log candidate events and shadow alerts without sending to user
+notify_mode: new
+# Optional hard cap on top of each watchlist max_price. Leave empty to disable.
+global_max_price: null
+
+notify:
+  vk:
+    mode: fallback # DECISION: fallback (if undelivered to TG in 10m) or always
+    version: "5.199"
+
+price_warning:
+  enabled: false # DECISION: disabled completely per owner directive (PR-0b-7)
+
+budget:
+  daily_cap: 900 # DECISION: single parameter daily_cap (Stage 1 = 900)
+  stages:
+    1:
+      daily_cap: 900
+      name: "Ступень 1 (Базовая)"
+      intervals:
+        sony_xm6: [5, 10]
+        bose_quietcomfort_ultra_gen_2: [10, 20]
+        Bowers_wilkins_px8_s2: [10, 20]
+        Bowers_wilkins_px7_s3: [20, 40]
+        cambridge_audio_melomania_p100_se: [20, 40]
+        gem_headphones_sony: [60, 120]
+        gem_headphones_bose: [60, 120]
+        gem_headphones_bowers: [60, 120]
+        gem_headphones_cambridge: [60, 120]
+    2:
+      daily_cap: 1200
+      name: "Ступень 2 (Ускоренная)"
+      intervals:
+        sony_xm6: [5, 10]
+        bose_quietcomfort_ultra_gen_2: [10, 20]
+        Bowers_wilkins_px8_s2: [10, 20]
+        Bowers_wilkins_px7_s3: [15, 30]
+        cambridge_audio_melomania_p100_se: [15, 30]
+        gem_headphones_sony: [30, 60]
+        gem_headphones_bose: [30, 60]
+        gem_headphones_bowers: [30, 60]
+        gem_headphones_cambridge: [30, 60]
+    3:
+      daily_cap: 1600
+      name: "Ступень 3 (Максимальная)" # DECISION: Proposed Stage 3 intervals
+      intervals:
+        sony_xm6: [4, 8]
+        bose_quietcomfort_ultra_gen_2: [8, 16]
+        Bowers_wilkins_px8_s2: [8, 16]
+        Bowers_wilkins_px7_s3: [12, 24]
+        cambridge_audio_melomania_p100_se: [12, 24]
+        gem_headphones_sony: [20, 40]
+        gem_headphones_bose: [20, 40]
+        gem_headphones_bowers: [20, 40]
+        gem_headphones_cambridge: [20, 40]
+
+request_budget:
+  daily_cap: 900
+  min_delay_seconds: 1
+  max_delay_seconds: 2
+  night_multiplier: 3.2
+  night_hours: [1, 7]
+  night_enabled: true
+  backoff_start_seconds: 60
+  circuit_minutes: 45
+  jitter: 0.25
+
+# DECISION: poll intervals by watchlist priority (minutes)
+priority_intervals:
+  high: 15
+  normal: 30
+  low: 60
+
+canary:
+  min_search_items: 1
+  max_empty_field_ratio: 0.3
+  max_price_missing_ratio: 0.15 # CALIBRATE: threshold for missing price on primary grid
+  min_hits_for_price_ratio: 10 # CALIBRATE: minimum hits on primary grid to evaluate price_missing_ratio
+  max_anchor_fallback_ratio: 0.05 # CALIBRATE: max ratio of anchor fallback hits per day (5%)
+  pause_on_fail: true
+  pause_minutes: 60 # CALIBRATE: temporary pause duration before auto-resume
+  max_consecutive_fails: 3 # CALIBRATE: permanent pause only after N consecutive fails
+  aggregate_price_missing_ratio: 0.15 # CALIBRATE: 24h aggregate price missing ratio alert threshold
+  aggregate_min_hits: 30 # CALIBRATE: minimum hits across all watches for aggregate check
+  raw_samples_keep: 5 # DECISION: keep last N search page HTML snapshots per watch for parser replay
+
+browser:
+  price_wait_enabled: false # DECISION: disabled by default in production to save CPU on weak host
+  price_selector_timeout_sec: 6.0 # CALIBRATE: timeout (5-8s) waiting for price selector on serp/card
+  block_assets: false # DECISION: disabled by default per user directive; enable via config or HUNTER_BLOCK_ASSETS
+  recycle_threshold_delta_mb: 400.0 # CALIBRATE: browser RSS+Swap delta above baseline to trigger restart
+  recycle_min_interval_hours: 2.0 # CALIBRATE: minimum cooldown between browser recycles
+
+parser:
+  anchor_fallback_enabled: false # DECISION: disabled by default to prevent scraping price-less lots from anchors
+
+
+round1:
+  min_discount: 0.15
+  instant_discount: 0.25
+  min_savings_rub: 2000
+  bargain_haircut: 0.08
+  min_market_n: 8
+  # false = a price below the 10th percentile only adds a "below_p10_risk" warning
+  #         and the lot can still reach buy_now (bargain-first behaviour).
+  # true  = legacy behaviour: such lots are forced to ask_questions.
+  below_p10_downgrade: false
+  stopwords:
+    - куплю
+    - скупка
+    - скупаем
+    - аренда
+    - ремонт
+
+round2:
+  enabled: true
+  run_vision: true
+  run_ocr: true
+  min_confidence: 0.6
+  double_judge: false
+
+seller:
+  cache_days: 7
+  prefer_private: true
+
+extract_rules:
+  comparison_stopwords:
+    - похож
+    - аналог
+    - как у
+    - вместо
+    - лучше чем
+    - в стиле
+    - типа
+    - копия
+    - реплика
+  fuzzy_threshold: 86 # CALIBRATE
+  fuzzy_cross_brand_forbidden: true
+
+shadow:
+  max_cards_per_day:
+    model_watches: 80 # CALIBRATE
+    gem: 15 # CALIBRATE
+
+alerts:
+  max_per_hour: 12 # CALIBRATE: fresh alerts rate limiter (12/hr)
+
+vision:
+  gem_confidence_threshold: 0.80 # CALIBRATE
+  max_images: 4
+  max_edge_px: 1024
+  check_phash_duplicates: true
+  phash_threshold: 4
+  ocr_languages: "eng+rus"
+
+ui:
+  host: 127.0.0.1
+  port: 8765
+
+llm:
+  gemini_model: gemini-3.1-flash-lite # DECISION: pinned exact model, not -latest
+  openrouter:
+    enabled: false
+  ollama:
+    enabled: false
+
+gem_filter:
+  forbidden_brands:
+    - Bang & Olufsen
+    - Beoplay
+    - B&O
+    - Denon
+    - Audio-Technica
+    - Audio Technica
+    - JBL
+    - Marshall
+    - Beats
+    - Apple
+    - AirPods
+    - Sennheiser
+    - Samsung
+    - Huawei
+    - Xiaomi
+    - Creative
+    - Edifier
+    - Anker
+    - Soundcore
+    - Baseus
+    - Haylou
+    - QCY
+    - Hoco
+    - Borofone
+    - Defender
+    - Sven
+    - Redragon
+    - HyperX
+    - Razer
+    - SteelSeries
+    - Logitech
+    - Corsair
+    - Plantronics
+    - Jabra
+    - Beyerdynamic
+    - AKG
+    - Shure
+    - Philips
+    - Panasonic
+    - Pioneer
+    - Technics
+    - Yamaha
+    - Onkyo
+    - Marantz
+  prefilter_stopwords:
+    - усилитель
+    - ресивер
+    - фонокорректор
+    - проигрыватель
+    - вертушка
+    - цап
+    - dac
+    - airpods
+    - tws
+    - вкладыши
+    - затычки
+    - pi5
+    - pi6
+    - pi7
+    - pi8
+    - pulse 3d
+    - pulse explore
+    - игровые
+    - игровой
+    - геймерские
+    - детский
+    - детские
+    - колонка
+    - колонки
+    - саундбар
+    - микрофон
+    - плеер
+
+coverage:
+  catchup: true
+  backfill: true
+  deep_sweep: true
+  adaptive_intervals: false # DECISION: keep fixed intervals for 9 legacy products until enabled
+  catchup_max_pages: 5
+  max_pages: 20 # CALIBRATE: hard max page limit for pagination
+
+collect:
+  search_mode: light
+  search_fallback_streak: 3
+  profile_count: 1 # CALIBRATE: single authenticated profile with real session (eliminates 429 rotation blocks)
+  search_concurrency: 4 # CALIBRATE: max concurrent search polls across profiles
+  global_min_gap_seconds: 1.0 # CALIBRATE: safe spacing between requests on single residential IP
+  light_min_delay_seconds: 1.0
+  light_max_delay_seconds: 2.0
+  profile_cooldown_minutes: 15 # CALIBRATE: per-profile cooldown on 429/403/captcha before rotation
+  cpu_workers: 2 # CALIBRATE: ThreadPoolExecutor workers for HTML parsing & gzip (2-core Pentium)
+  light_variant: light_nav
+  tab_recycle_interval: 200
+
+egress_regulator:
+  mode: "off" # Rollout sequence: "off" -> "observe" -> "enforce"
+  interval_sec: 4.56
+  max_cooldown_sec: 902.58
+
+
+
+
+
+
